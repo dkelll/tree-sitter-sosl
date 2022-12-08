@@ -1,0 +1,30 @@
+{
+  "name": "tree-sitter-sosl",
+  "version": "0.0.1",
+  "description": "sosl grammar for tree-sitter",
+  "main": "bindings/node",
+  "keywords": [
+    "parsing",
+    "incremental"
+  ],
+  "dependencies": {
+    "nan": "^2.12.1"
+  },
+  "devDependencies": {
+    "tree-sitter-cli": "^0.20.7"
+  },
+  "scripts": {
+    "test": "tree-sitter test"
+  },
+  "tree-sitter": [
+    {
+      "scope": "source.sosl",
+      "file-types": [
+        "sosl"
+      ],
+      "highlights": [
+        "queries/highlights.scm"
+      ]
+    }
+  ]
+}
